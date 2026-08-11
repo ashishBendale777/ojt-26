@@ -1,0 +1,11 @@
+Type of ELement===
+    1. Block Elements
+    2. Inline Elements
+
+Categories Of Elements===
+    1. Text Elements ==  b i u strong sub sup strick span
+    2. Semantic Elements == div section main header footer aside nav address tel
+    3. Container Elements == div main header footer
+    4. Media Elements == audio video img
+    5. Form Elements == form label input select option
+    6. List Elements == ul (unordered list) ol (ordered List) li (list item)
