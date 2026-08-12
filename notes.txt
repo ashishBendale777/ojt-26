@@ -9,3 +9,17 @@ Categories Of Elements===
     4. Media Elements == audio video img
     5. Form Elements == form label input select option
     6. List Elements == ul (unordered list) ol (ordered List) li (list item)
+
+    ===================
+    CSS types 
+        Inlinen
+        Internal 
+        External
+    =============================
+    CSS Selectors 
+        Global 
+        Class
+        Element
+        Id
+        Type
+        Pseduo

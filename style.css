@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    color: red;
+    font-style: italic;
+    font-size: 100px;
+}
+
+span {
+    color: green;
+    background-color: red;
+    font-style: italic;
+}
