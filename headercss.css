@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100dvh;
+    width: 100%;
+}
+
+header {
+    background-color: red;
+    height: 60px;
+    display: flex;
+    justify-content: end;
+}
+
+nav{
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    /* padding: 10px; */
+    margin-right: 20px;
+
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links li{
+    font-style: italic;
+    font-size: 1.6rem;
+}
