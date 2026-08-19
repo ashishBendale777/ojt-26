@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100dvh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .banner-container {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            background-color: red;
+        }
+
+        .banner-container img{
+            height: 100%;
+            width: 100%;
+        }
+
+        .info-container{
+            background-color: rgba(63, 66, 63, 0.4);
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner-container">
+        <img src="./images/city.jpg" alt="Banner City" />
+        <div class="info-container">
+            <h1>Welcome To My Website</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, ipsam debitis! Beatae voluptates
+                adipisci dolorem qui sunt repudiandae!
+            </p>
+            <button>
+                Get Started
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
