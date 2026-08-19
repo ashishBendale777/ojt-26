@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100dvh;
+    width: 100%;
+}
+
+section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-container{
+    height: 80%;
+    width: 80%;
+    display: flex;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+}
+
+.info-container h1{
+    font-size: 4.5rem;
+}
+
+.info-container p{
+    font-size: 2rem;
+}
+
+.btn-container button{
+    border-radius: 12px;
+    border: 3px solid red;
+    padding: 8px;
+    background: none;
+
+}
+
+.btn-container button:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
