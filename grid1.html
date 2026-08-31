@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100dvh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid-container {
+            height: 80%;
+            width: 80%;
+            display: grid;
+            gap: 12px;
+            padding: 12px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 100px 2fr 2fr;
+        }
+
+        .grid-item {
+            background-color: blue;
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        .item-bg2 {
+            background-color: aqua;
+        }
+
+        .item-bg3 {
+            background-color: orange;
+        }
+
+        .item-bg4 {
+            background-color: azure;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div style="background-color: red;" class="grid-item">
+            1
+        </div>
+        <div class="grid-item item-bg2">
+            2
+        </div>
+        <div class="grid-item item-bg3">
+            3
+        </div>
+        <div class="grid-item item-bg4">
+            4
+        </div>
+        <div class="grid-item">
+            5
+        </div>
+        <div class="grid-item">
+            6
+        </div>
+        <div class="grid-item">
+            7
+        </div>
+        <div class="grid-item">
+            8
+        </div>
+        <div class="grid-item">
+            9
+        </div>
+    </div>
+</body>
+
+</html>
