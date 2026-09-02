@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100dvh;
+            width: 100%;
+        }
+        .grid-container{
+            height: 100%;
+            width: 100%;
+            display: grid;
+            gap: 12px;
+            grid-template-areas: 
+                "a a b b"
+                "c d d d"
+                "e e e e";
+        }
+
+        .gi-a{
+            grid-area: a;
+            background-color: red;
+        }
+        .gi-b{
+            grid-area: b;
+            background-color: orange;
+
+
+        }
+        .gi-c{
+            grid-area: c;
+            background-color: green;
+
+        }
+        .gi-d{
+            grid-area: d;
+            background-color: cyan;
+        }
+        .gi-e{
+            grid-area: e;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="gi-a">
+            A
+        </div>
+        <div class="gi-b">
+            B
+        </div>
+        <div class="gi-c">
+            C
+        </div>
+        <div class="gi-d">
+            D
+        </div>
+        <div class="gi-e">
+            E
+        </div>
+    </div>
+</body>
+
+</html>

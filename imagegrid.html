@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100dvh;
+            width: 100%;
+        }
+
+        .grid-container {
+            height: 100%;
+            width: 100%;
+            display: grid;
+            gap: 12px;
+            grid-template-areas:
+                "a b c d"
+                "e e c g"
+                "h h f g"
+                "h h i i";
+        }
+
+        .gi-a {
+            grid-area: a;
+            background-color: red;
+        }
+
+        .gi-b {
+            grid-area: b;
+            background-color: orange;
+
+
+        }
+
+        .gi-c {
+            grid-area: c;
+            background-color: green;
+
+        }
+
+        .gi-d {
+            grid-area: d;
+            background-color: cyan;
+        }
+
+        .gi-e {
+            grid-area: e;
+        }
+
+        .gi-f {
+            grid-area: f;
+        }
+        .gi-g {
+            grid-area: g;
+        }
+
+        .gi-h {
+            grid-area: h;
+        }
+
+        .gi-i {
+            grid-area: i;
+        }
+
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="gi-a">
+            <img src="images/city.jpg" alt="" />
+
+        </div>
+        <div class="gi-b">
+            <img src="images/city.jpg" alt="" />
+
+        </div>
+        <div class="gi-c">
+            <img src="images/city.jpg" alt="" />
+
+        </div>
+        <div class="gi-d">
+            <img src="images/city.jpg" alt="" />
+
+        </div>
+        <div class="gi-e">
+            <img src="images/city.jpg" alt="" />
+
+        </div>
+
+        <div class="gi-f">
+            <img src="images/city.jpg" alt="" />
+
+        </div>
+
+        <div class="gi-g">
+            <img src="images/city.jpg" alt="" />
+
+        </div>
+
+        <div class="gi-h">
+            <img src="images/city.jpg" alt="" />
+
+        </div>
+
+        <div class="gi-i">
+            <img src="images/city.jpg" alt="" />
+        </div>
+    </div>
+</body>
+
+</html>

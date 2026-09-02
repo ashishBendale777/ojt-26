@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100dvh;
+            width: 100%;
+        }
+
+        .grid-container {
+            height: 100%;
+            width: 100%;
+            display: grid;
+            gap: 12px;
+            grid-template-columns: 200px 1fr 1fr;
+            grid-template-rows: 100px 1fr 1fr 80px;
+            grid-template-areas:
+                "header header header"
+                "aside main main"
+                "aside main main"
+                "footer footer footer";
+
+        }
+
+        header {
+            grid-area: header;
+            background-color: blue;
+        }
+
+        main {
+            grid-area: main;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: green;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <h6>Header</h6>
+        </header>
+
+        <aside>
+            <h6>Aside</h6>
+        </aside>
+
+        <main>
+            <h2>Main</h2>
+        </main>
+
+        <footer>
+            <h6>footer</h6>
+        </footer>
+    </div>
+
+</body>
+
+</html>
