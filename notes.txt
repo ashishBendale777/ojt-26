@@ -39,3 +39,11 @@ position properties===> top bottom left right
         transform 
         transition
         translate (css functions) trnslateX trnslateY
+
+
+============================
+HTML Form
+label , input ,select, option, button
+
+input types : text, email, number, tel, radio, checkbox, password, color
+, textarea etc
