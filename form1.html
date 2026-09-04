@@ -3,15 +3,57 @@
 
 <head>
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
         body {
             height: 100dvh;
             width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-container {
+            width: 40%;
+            padding: 12px;
+            background-color: red;
+            border-radius: 10px;
+        }
+
+        .form-control{
+            margin-bottom: 12px;
+        }
+        .input-box{
+            display: flex;
+            align-items: center;
+            border: 1px solid blue;
+            border-radius: 12px;
+            padding: 8px;
+            gap: 12px;
+        }
+
+        .input-box i{
+        }
+        .input-box input{
+            width: 100%;
+            background: none;
+            border: none;
+            outline: none;
+        }
+
+        button{
+            background-color: blue;
+            border-radius: 6px;
+            padding: 6px;
         }
     </style>
 </head>
@@ -22,27 +64,42 @@
         <form>
             <div class="form-control">
                 <label for="fullName">Full Name</label>
-                <input placeholder="Enter Full Name" type="text" name="fullName" id="fullName" />
+                <div class="input-box">
+                    <i class="fa-solid fa-user"></i>
+                    <input placeholder="Enter Full Name" type="text" name="fullName" id="fullName" />
+                </div>
             </div>
 
             <div class="form-control">
                 <label for="email">Email</label>
-                <input type="email" placeholder="Enter Email" name="email" id="email" />
+                <div class="input-box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Enter Email" name="email" id="email" />
+                </div>
             </div>
 
             <div class="form-control">
                 <label for="password">Password</label>
-                <input type="password" placeholder="Enter Password" name="email" id="email" />
+                <div class="input-box">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Enter Password" name="email" id="email" />
+                </div>
             </div>
 
             <div class="form-control">
                 <label for="contact">Contact Number</label>
-                <input type="tel" name="contact" id="contact" />
+                <div class="input-box">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="tel" name="contact" id="contact" />
+                </div>
             </div>
 
             <div class="form-control">
                 <label for="address">Address</label>
-                <input type="text" name="address" id="address" />
+                <div class="input-box">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" name="address" id="address" />
+                </div>
             </div>
 
             <div class="form-control">
@@ -53,15 +110,15 @@
                 <label for="female">Female</label>
             </div>
 
-            
+
             <div class="form-control">
                 <label>Hobbies</label>
                 <input type="checkbox" name="hobbies" id="music" />
                 <label for="music">Music</label>
-                
+
                 <input type="checkbox" name="hobbies" id="dance" />
                 <label for="dance">Dancing</label>
-                
+
                 <input type="checkbox" name="hobbies" id="skech" />
                 <label for="skech">Skeching</label>
             </div>
@@ -71,6 +128,8 @@
                 Submit
             </button>
         </form>
+    </div>
+
     </div>
 </body>
 

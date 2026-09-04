@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Registration Form</title>
+
+```
+<!-- Font Awesome -->
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100dvh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f2f2f2;
+    }
+
+    .form-container {
+        width: 40%;
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .form-control {
+        margin-bottom: 15px;
+    }
+
+    .form-control label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .input-box {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 0 10px;
+    }
+
+    .input-box i {
+        margin-right: 10px;
+        color: #555;
+    }
+
+    .input-box input {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background: none;
+        outline: none;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #333;
+        color: white;
+        border: none;
+
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<div class="form-container">
+
+    <form>
+
+        <div class="form-control">
+            <label for="fullName">Full Name</label>
+
+            <div class="input-box">
+                <i class="fa-solid fa-user"></i>
+                <input placeholder="Enter Full Name"
+                    type="text"
+                    name="fullName"
+                    id="fullName">
+            </div>
+        </div>
+
+
+        <div class="form-control">
+            <label for="email">Email</label>
+
+            <div class="input-box">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email"
+                    placeholder="Enter Email"
+                    name="email"
+                    id="email">
+            </div>
+        </div>
+
+
+        <div class="form-control">
+            <label for="password">Password</label>
+
+            <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password"
+                    placeholder="Enter Password"
+                    name="password"
+                    id="password">
+            </div>
+        </div>
+
+
+        <div class="form-control">
+            <label for="contact">Contact Number</label>
+
+            <div class="input-box">
+                <i class="fa-solid fa-phone"></i>
+                <input type="tel"
+                    placeholder="Enter Contact Number"
+                    name="contact"
+                    id="contact">
+            </div>
+        </div>
+
+
+        <div class="form-control">
+            <label for="address">Address</label>
+
+            <div class="input-box">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text"
+                    placeholder="Enter Address"
+                    name="address"
+                    id="address">
+            </div>
+        </div>
+
+
+        <div class="form-control">
+
+            <label>Gender</label>
+
+            <input type="radio" name="gender" id="male">
+            <label for="male" style="display: inline;">Male</label>
+
+            <input type="radio" name="gender" id="female">
+            <label for="female" style="display: inline;">Female</label>
+
+        </div>
+
+
+        <div class="form-control">
+
+            <label>Hobbies</label>
+
+            <input type="checkbox" name="hobbies" id="music">
+            <label for="music" style="display: inline;">Music</label>
+
+            <input type="checkbox" name="hobbies" id="dance">
+            <label for="dance" style="display: inline;">Dancing</label>
+
+            <input type="checkbox" name="hobbies" id="sketch">
+            <label for="sketch" style="display: inline;">Sketching</label>
+
+        </div>
+
+
+        <button type="submit">
+            Submit
+        </button>
+
+    </form>
+
+</div>
+```
+
+</body>
+
+</html>
