@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100dvh;
+            width: 100%;
+        }
+
+        input::placeholder {
+            font-style: italic;
+            color: red;
+        }
+
+        input:focus {
+            border: 2px solid red;
+            outline: none;
+        }
+
+        p::first-line {
+            font-size: 1.3rem;
+            color: green;
+            font-style: italic;
+        }
+
+        p::selection {
+            color: red;
+            background-color: cyan;
+        }
+
+        h1::first-letter {
+            font-size: 3rem;
+            color: red;
+            font-style: italic;
+        }
+
+        li:first-child {
+            color: red;
+
+        }
+
+        li:last-child {
+            color: blue;
+        }
+
+        li:nth-last-child(3){
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <form>
+
+        <div class="form-control">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter Name">
+        </div>
+
+
+        <div class="form-control">
+            <label>Email</label>
+            <input type="email" placeholder="Enter Email">
+        </div>
+    </form>
+
+    <P>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex molestiae rem quae vel recusandae praesentium, at
+        reiciendis quod, impedit laborum et porro minus quaerat maiores, laudantium similique aliquid placeat qui!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex molestiae rem quae vel recusandae praesentium, at
+        reiciendis quod, impedit laborum et porro minus quaerat maiores, laudantium similique aliquid placeat qui!
+    </P>
+    <h1>
+        Hello From Technoweit
+    </h1>
+
+
+    <ol>
+        <li>CPP</li>
+        <li>Java</li>
+        <li>JavaSctipt</li>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>ReactJS</li>
+        <li>Npde JS</li>
+        <li>Postgre</li>
+    </ol>
+</body>
+
+</html>
