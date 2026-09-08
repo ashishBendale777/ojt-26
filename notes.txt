@@ -47,3 +47,71 @@ label , input ,select, option, button
 
 input types : text, email, number, tel, radio, checkbox, password, color
 , textarea etc
+
+=========================================================
+
+
+ANIMATIONS
+
+  @keyframes demo {
+
+            /* Original */
+            0% {
+                transform: translate(0, 0);
+            }
+
+            /* Move */
+            10% {
+                transform: translate(150px, 0);
+            }
+
+            /* Scale */
+            20% {
+                transform: scale(1.5);
+            }
+
+            /* Rotate */
+            30% {
+                transform: rotate(45deg);
+            }
+
+            /* Skew X */
+            40% {
+                transform: skewX(30deg);
+            }
+
+            /* Skew Y */
+            50% {
+                transform: skewY(30deg);
+            }
+
+            /* Scale X */
+            60% {
+                transform: scaleX(1.5);
+            }
+
+            /* Scale Y */
+            70% {
+                transform: scaleY(1.5);
+            }
+
+            /* Rotate X */
+            80% {
+                transform: rotateX(180deg);
+            }
+
+            /* Rotate Y */
+            90% {
+                transform: rotateY(180deg);
+            }
+
+            /* Back */
+            100% {
+                transform: none;
+            }
+        }
+
+
+
+
+
