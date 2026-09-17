@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let color = "blue"
+
+        switch (color) {
+            case "red":
+                console.log("STOP")
+                break;
+            case "green":
+                console.log("GO")
+                break;
+            case "yellow":
+                console.log("READY")
+                break;
+            default:
+                console.log("Invalid Color")
+
+        }
+
+        let percentage = 89
+        switch (true) {
+            case percentage >= 85:
+                console.log("GRADE A+")
+                break;
+
+            case percentage >= 75 && percentage < 85:
+                console.log("GRADE A")
+                break;
+
+            case percentage >= 60 && percentage < 75:
+                console.log("GRADE B")
+                break;
+
+            default:
+                console.log("FAIL")
+                break;
+        }
+    </script>
+</body>
+
+</html>
