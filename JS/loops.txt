@@ -1,0 +1,1682 @@
+JAVASCRIPT LOOPS
+================
+
+First understand the basic idea:
+
+A loop is used when we want to execute the same code multiple times.
+
+For example:
+
+console.log("Hello")
+console.log("Hello")
+console.log("Hello")
+console.log("Hello")
+console.log("Hello")
+
+Instead of writing console.log 5 times, we can use a loop.
+
+A loop basically says:
+
+"Start from here.
+Check this condition.
+If condition is true, execute the code.
+Change the value.
+Again check the condition.
+Continue until the condition becomes false."
+
+
+==================================================
+1. FOR LOOP
+==================================================
+
+Basic syntax:
+
+for (initialization; condition; update) {
+    // code
+}
+
+
+Example:
+
+for (let i = 1; i <= 5; i++) {
+    console.log(i)
+}
+
+
+Before explaining the code, remember 3 things:
+
+1. Initialization
+2. Condition
+3. Update
+
+
+Here:
+
+let i = 1
+
+This is initialization.
+
+i <= 5
+
+This is condition.
+
+i++
+
+This is update.
+
+
+Now let's TRACK the loop.
+
+
+First:
+
+i = 1
+
+Check condition:
+
+1 <= 5
+
+TRUE
+
+So execute:
+
+console.log(1)
+
+Output:
+
+1
+
+
+Then update:
+
+i++
+
+i becomes:
+
+2
+
+
+Again check condition:
+
+2 <= 5
+
+TRUE
+
+Execute:
+
+console.log(2)
+
+Output:
+
+2
+
+
+Update:
+
+i becomes 3
+
+
+Again:
+
+3 <= 5
+
+TRUE
+
+Print:
+
+3
+
+
+Update:
+
+i becomes 4
+
+
+Again:
+
+4 <= 5
+
+TRUE
+
+Print:
+
+4
+
+
+Update:
+
+i becomes 5
+
+
+Again:
+
+5 <= 5
+
+TRUE
+
+Print:
+
+5
+
+
+Update:
+
+i becomes 6
+
+
+Again check:
+
+6 <= 5
+
+FALSE
+
+
+Loop stops.
+
+
+Final output:
+
+1
+2
+3
+4
+5
+
+
+IMPORTANT:
+
+The loop does NOT stop when i becomes 5.
+
+It first checks:
+
+5 <= 5
+
+which is TRUE.
+
+Therefore 5 gets printed.
+
+After printing 5, i becomes 6.
+
+Then:
+
+6 <= 5
+
+is FALSE.
+
+So loop stops.
+
+
+
+==================================================
+2. FOR LOOP - PRINT 1 TO 10
+==================================================
+
+Code:
+
+for (let i = 1; i <= 10; i++) {
+    console.log(i)
+}
+
+
+Tracking:
+
+Start i = 1
+
+1 <= 10 -> TRUE -> print 1 -> i = 2
+
+2 <= 10 -> TRUE -> print 2 -> i = 3
+
+3 <= 10 -> TRUE -> print 3 -> i = 4
+
+4 <= 10 -> TRUE -> print 4 -> i = 5
+
+5 <= 10 -> TRUE -> print 5 -> i = 6
+
+6 <= 10 -> TRUE -> print 6 -> i = 7
+
+7 <= 10 -> TRUE -> print 7 -> i = 8
+
+8 <= 10 -> TRUE -> print 8 -> i = 9
+
+9 <= 10 -> TRUE -> print 9 -> i = 10
+
+10 <= 10 -> TRUE -> print 10 -> i = 11
+
+11 <= 10 -> FALSE
+
+STOP.
+
+
+==================================================
+3. FOR LOOP - REVERSE LOOP
+==================================================
+
+We can also decrease the value.
+
+Example:
+
+for (let i = 5; i >= 1; i--) {
+    console.log(i)
+}
+
+
+Tracking:
+
+i = 5
+
+5 >= 1 -> TRUE -> print 5
+
+i-- -> i = 4
+
+
+4 >= 1 -> TRUE -> print 4
+
+i-- -> i = 3
+
+
+3 >= 1 -> TRUE -> print 3
+
+i-- -> i = 2
+
+
+2 >= 1 -> TRUE -> print 2
+
+i-- -> i = 1
+
+
+1 >= 1 -> TRUE -> print 1
+
+i-- -> i = 0
+
+
+0 >= 1 -> FALSE
+
+STOP.
+
+
+Output:
+
+5
+4
+3
+2
+1
+
+
+==================================================
+4. FOR LOOP - EVEN NUMBERS
+==================================================
+
+Example:
+
+for (let i = 2; i <= 10; i = i + 2) {
+    console.log(i)
+}
+
+
+Tracking:
+
+i = 2
+
+2 <= 10 -> TRUE -> print 2
+
+i = i + 2
+
+i = 4
+
+
+4 <= 10 -> TRUE -> print 4
+
+i = 6
+
+
+6 <= 10 -> TRUE -> print 6
+
+i = 8
+
+
+8 <= 10 -> TRUE -> print 8
+
+i = 10
+
+
+10 <= 10 -> TRUE -> print 10
+
+i = 12
+
+
+12 <= 10 -> FALSE
+
+STOP.
+
+
+Output:
+
+2
+4
+6
+8
+10
+
+
+==================================================
+5. WHILE LOOP
+==================================================
+
+Now let's understand while loop.
+
+Basic syntax:
+
+while (condition) {
+    // code
+}
+
+
+Important difference:
+
+In for loop, initialization, condition and update are written together.
+
+In while loop, we normally write them separately.
+
+
+Example:
+
+let i = 1
+
+while (i <= 5) {
+    console.log(i)
+    i++
+}
+
+
+Tracking:
+
+First initialization happens:
+
+i = 1
+
+
+Now while checks:
+
+1 <= 5
+
+TRUE
+
+Execute:
+
+console.log(i)
+
+Print:
+
+1
+
+
+Then:
+
+i++
+
+i becomes 2
+
+
+Again while checks:
+
+2 <= 5
+
+TRUE
+
+Print:
+
+2
+
+i becomes 3
+
+
+Again:
+
+3 <= 5
+
+TRUE
+
+Print:
+
+3
+
+i becomes 4
+
+
+Again:
+
+4 <= 5
+
+TRUE
+
+Print:
+
+4
+
+i becomes 5
+
+
+Again:
+
+5 <= 5
+
+TRUE
+
+Print:
+
+5
+
+i becomes 6
+
+
+Again:
+
+6 <= 5
+
+FALSE
+
+STOP.
+
+
+Output:
+
+1
+2
+3
+4
+5
+
+
+VERY IMPORTANT:
+
+In a while loop, students must remember to update the variable.
+
+For example:
+
+let i = 1
+
+while (i <= 5) {
+    console.log(i)
+}
+
+
+This is an INFINITE LOOP.
+
+Why?
+
+Because i always remains 1.
+
+Every time JavaScript checks:
+
+1 <= 5
+
+TRUE
+
+Again:
+
+1 <= 5
+
+TRUE
+
+Again:
+
+1 <= 5
+
+TRUE
+
+It will never become false.
+
+Therefore we normally write:
+
+i++
+
+
+==================================================
+6. DO WHILE LOOP
+==================================================
+
+Now we have:
+
+do...while
+
+
+Syntax:
+
+do {
+    // code
+} while (condition)
+
+
+The important difference is:
+
+while loop:
+
+FIRST check condition
+THEN execute code
+
+
+do while:
+
+FIRST execute code
+THEN check condition
+
+
+Example:
+
+let i = 1
+
+do {
+    console.log(i)
+    i++
+} while (i <= 5)
+
+
+Tracking:
+
+i = 1
+
+
+Execute code FIRST:
+
+console.log(1)
+
+Print:
+
+1
+
+
+i++
+
+i = 2
+
+
+Now check:
+
+2 <= 5
+
+TRUE
+
+
+Execute:
+
+print 2
+
+i = 3
+
+
+Check:
+
+3 <= 5
+
+TRUE
+
+Print 3
+
+i = 4
+
+
+Check:
+
+4 <= 5
+
+TRUE
+
+Print 4
+
+i = 5
+
+
+Check:
+
+5 <= 5
+
+TRUE
+
+Print 5
+
+i = 6
+
+
+Check:
+
+6 <= 5
+
+FALSE
+
+STOP.
+
+
+Output:
+
+1
+2
+3
+4
+5
+
+
+==================================================
+7. IMPORTANT DIFFERENCE BETWEEN WHILE
+AND DO WHILE
+==================================================
+
+Consider:
+
+let i = 10
+
+
+WHILE:
+
+while (i <= 5) {
+    console.log(i)
+}
+
+
+First condition:
+
+10 <= 5
+
+FALSE
+
+Therefore body will NOT execute.
+
+Output:
+
+Nothing
+
+
+Now:
+
+DO WHILE:
+
+do {
+    console.log(i)
+} while (i <= 5)
+
+
+First execute the body:
+
+console.log(10)
+
+So output:
+
+10
+
+
+Then condition:
+
+10 <= 5
+
+FALSE
+
+STOP.
+
+
+Therefore:
+
+while loop = may execute zero times
+
+do while = executes at least one time
+
+
+This is the most important difference.
+
+
+==================================================
+8. BREAK
+==================================================
+
+break means:
+
+"Immediately stop the loop."
+
+
+Example:
+
+for (let i = 1; i <= 10; i++) {
+
+    if (i === 5) {
+        break
+    }
+
+    console.log(i)
+}
+
+
+Tracking:
+
+i = 1
+
+1 === 5 -> FALSE
+
+Print 1
+
+
+i = 2
+
+2 === 5 -> FALSE
+
+Print 2
+
+
+i = 3
+
+3 === 5 -> FALSE
+
+Print 3
+
+
+i = 4
+
+4 === 5 -> FALSE
+
+Print 4
+
+
+i = 5
+
+5 === 5 -> TRUE
+
+break
+
+
+Loop immediately stops.
+
+
+Output:
+
+1
+2
+3
+4
+
+
+Notice:
+
+5 is NOT printed.
+
+Because break happens before console.log.
+
+
+Real-world example:
+
+Imagine a student list:
+
+Student 1
+Student 2
+Student 3
+Student 4
+Student 5
+
+If we find the student we are searching for, we don't need to continue checking the remaining students.
+
+We can use break.
+
+
+==================================================
+9. CONTINUE
+==================================================
+
+continue means:
+
+"Skip the current iteration and go to the next iteration."
+
+
+Example:
+
+for (let i = 1; i <= 5; i++) {
+
+    if (i === 3) {
+        continue
+    }
+
+    console.log(i)
+}
+
+
+Tracking:
+
+i = 1
+
+1 === 3 -> FALSE
+
+Print 1
+
+
+i = 2
+
+2 === 3 -> FALSE
+
+Print 2
+
+
+i = 3
+
+3 === 3 -> TRUE
+
+continue
+
+
+Current iteration is skipped.
+
+console.log does NOT execute.
+
+
+Then loop moves to next iteration.
+
+
+i = 4
+
+4 === 3 -> FALSE
+
+Print 4
+
+
+i = 5
+
+5 === 3 -> FALSE
+
+Print 5
+
+
+Output:
+
+1
+2
+4
+5
+
+
+So remember:
+
+break = STOP THE LOOP
+
+continue = SKIP CURRENT ITERATION
+
+
+==================================================
+10. NESTED LOOP
+==================================================
+
+A loop inside another loop is called:
+
+Nested loop.
+
+
+Example:
+
+for (let i = 1; i <= 3; i++) {
+
+    for (let j = 1; j <= 2; j++) {
+
+        console.log(i, j)
+
+    }
+
+}
+
+
+Students often get confused here.
+
+Remember:
+
+For every one execution of the OUTER loop,
+the INNER loop completes ALL its iterations.
+
+
+Let's track it.
+
+
+Outer loop:
+
+i = 1
+
+
+Inner loop starts:
+
+j = 1
+
+Print:
+
+1 1
+
+
+j = 2
+
+Print:
+
+1 2
+
+
+Inner loop finishes.
+
+
+Now outer loop updates:
+
+i = 2
+
+
+Inner loop starts again:
+
+j = 1
+
+Print:
+
+2 1
+
+
+j = 2
+
+Print:
+
+2 2
+
+
+Inner loop finishes.
+
+
+Outer loop:
+
+i = 3
+
+
+Inner loop:
+
+j = 1
+
+Print:
+
+3 1
+
+
+j = 2
+
+Print:
+
+3 2
+
+
+Final output:
+
+1 1
+1 2
+2 1
+2 2
+3 1
+3 2
+
+
+VERY IMPORTANT RULE:
+
+For every 1 outer iteration,
+the inner loop runs completely.
+
+
+Here:
+
+Outer loop = 3 times
+
+Inner loop = 2 times
+
+Total executions:
+
+3 × 2 = 6
+
+
+==================================================
+11. NESTED LOOP - REAL WORLD EXAMPLE
+==================================================
+
+Imagine a school has:
+
+3 classes
+
+Each class has:
+
+2 students
+
+
+We can use:
+
+for (let classNo = 1; classNo <= 3; classNo++) {
+
+    for (let student = 1; student <= 2; student++) {
+
+        console.log(
+            "Class:",
+            classNo,
+            "Student:",
+            student
+        )
+
+    }
+
+}
+
+
+Think like this:
+
+Class 1
+    Student 1
+    Student 2
+
+Class 2
+    Student 1
+    Student 2
+
+Class 3
+    Student 1
+    Student 2
+
+
+This is a very good real-world explanation of nested loops.
+
+
+==================================================
+12. LOOP THROUGH AN ARRAY
+==================================================
+
+Now let's connect loops with arrays.
+
+
+Example:
+
+let fruits = ["Apple", "Mango", "Banana"]
+
+
+We want to print every fruit.
+
+We can write:
+
+for (let i = 0; i < fruits.length; i++) {
+
+    console.log(fruits[i])
+
+}
+
+
+Tracking:
+
+Array:
+
+Index:
+0 -> Apple
+1 -> Mango
+2 -> Banana
+
+
+First:
+
+i = 0
+
+0 < 3 -> TRUE
+
+fruits[0]
+
+Apple
+
+
+i++
+
+i = 1
+
+
+1 < 3 -> TRUE
+
+fruits[1]
+
+Mango
+
+
+i++
+
+i = 2
+
+
+2 < 3 -> TRUE
+
+fruits[2]
+
+Banana
+
+
+i++
+
+i = 3
+
+
+3 < 3 -> FALSE
+
+STOP.
+
+
+Output:
+
+Apple
+Mango
+Banana
+
+
+IMPORTANT:
+
+Array index starts from 0.
+
+Therefore:
+
+first element -> index 0
+
+second element -> index 1
+
+third element -> index 2
+
+
+==================================================
+13. FOR...OF LOOP
+==================================================
+
+JavaScript also provides:
+
+for...of
+
+
+It is very useful for arrays.
+
+
+Example:
+
+let fruits = ["Apple", "Mango", "Banana"]
+
+
+for (let fruit of fruits) {
+    console.log(fruit)
+}
+
+
+Tracking:
+
+First:
+
+fruit = "Apple"
+
+Print Apple
+
+
+Second:
+
+fruit = "Mango"
+
+Print Mango
+
+
+Third:
+
+fruit = "Banana"
+
+Print Banana
+
+
+No need to manually manage index.
+
+
+Compare:
+
+
+Normal for:
+
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i])
+}
+
+
+for...of:
+
+for (let fruit of fruits) {
+    console.log(fruit)
+}
+
+
+for...of directly gives us the VALUE.
+
+
+==================================================
+14. FOR...IN LOOP
+==================================================
+
+for...in is generally used to iterate over OBJECT properties.
+
+
+Example:
+
+let student = {
+    name: "Rahul",
+    age: 20,
+    course: "BCA"
+}
+
+
+for (let key in student) {
+    console.log(key)
+}
+
+
+Output:
+
+name
+age
+course
+
+
+Here key gives the PROPERTY NAME.
+
+
+If we want the value:
+
+for (let key in student) {
+
+    console.log(student[key])
+
+}
+
+
+Output:
+
+Rahul
+20
+BCA
+
+
+If we want both:
+
+for (let key in student) {
+
+    console.log(key, student[key])
+
+}
+
+
+Output:
+
+name Rahul
+age 20
+course BCA
+
+
+Remember:
+
+for...of -> values
+
+for...in -> keys/properties
+
+
+==================================================
+15. LOOP SUMMARY
+==================================================
+
+
+FOR LOOP
+
+Used when we generally know how many times we want to repeat.
+
+Example:
+
+for (let i = 1; i <= 5; i++) {
+    console.log(i)
+}
+
+
+WHILE LOOP
+
+Used when repetition depends mainly on a condition.
+
+Example:
+
+let i = 1
+
+while (i <= 5) {
+    console.log(i)
+    i++
+}
+
+
+DO WHILE LOOP
+
+Executes the code at least once before checking the condition.
+
+Example:
+
+let i = 1
+
+do {
+    console.log(i)
+    i++
+} while (i <= 5)
+
+
+FOR...OF
+
+Used to get values from an iterable such as an array.
+
+Example:
+
+for (let fruit of fruits) {
+    console.log(fruit)
+}
+
+
+FOR...IN
+
+Used to get keys/properties of an object.
+
+Example:
+
+for (let key in student) {
+    console.log(key)
+}
+
+
+BREAK
+
+Immediately stops the loop.
+
+
+CONTINUE
+
+Skips the current iteration.
+
+
+NESTED LOOP
+
+A loop inside another loop.
+
+
+==================================================
+16. THE UNIVERSAL LOOP TRACKING METHOD
+==================================================
+
+Tell students:
+
+"Whenever you see a loop, don't try to understand everything at once.
+
+Track it step by step."
+
+
+For a FOR loop, always ask:
+
+STEP 1:
+What is the initial value?
+
+STEP 2:
+What is the condition?
+
+STEP 3:
+Is the condition TRUE or FALSE?
+
+STEP 4:
+If TRUE, execute the body.
+
+STEP 5:
+Perform the update.
+
+STEP 6:
+Go back to the condition.
+
+STEP 7:
+Repeat until condition becomes FALSE.
+
+
+Example:
+
+for (let i = 1; i <= 3; i++) {
+    console.log(i)
+}
+
+
+Think:
+
+START
+i = 1
+
+CHECK
+1 <= 3 -> TRUE
+
+BODY
+print 1
+
+UPDATE
+i = 2
+
+CHECK
+2 <= 3 -> TRUE
+
+BODY
+print 2
+
+UPDATE
+i = 3
+
+CHECK
+3 <= 3 -> TRUE
+
+BODY
+print 3
+
+UPDATE
+i = 4
+
+CHECK
+4 <= 3 -> FALSE
+
+STOP
+
+
+This tracking method works for almost every basic loop question.
+
+
+==================================================
+17. PRACTICE QUESTIONS FOR STUDENTS
+==================================================
+
+Ask students to manually track these WITHOUT running the code.
+
+QUESTION 1:
+
+for (let i = 1; i <= 5; i++) {
+    console.log(i)
+}
+
+
+Question:
+
+What is the output?
+
+
+--------------------------------------------
+
+QUESTION 2:
+
+for (let i = 5; i >= 1; i--) {
+    console.log(i)
+}
+
+
+Question:
+
+What is the output?
+
+
+--------------------------------------------
+
+QUESTION 3:
+
+for (let i = 2; i <= 10; i += 2) {
+    console.log(i)
+}
+
+
+Question:
+
+What is the output?
+
+
+--------------------------------------------
+
+QUESTION 4:
+
+let i = 1
+
+while (i <= 4) {
+    console.log(i)
+    i++
+}
+
+
+Question:
+
+What is the output?
+
+
+--------------------------------------------
+
+QUESTION 5:
+
+let i = 10
+
+do {
+    console.log(i)
+} while (i < 5)
+
+
+Question:
+
+How many times will it print?
+
+
+--------------------------------------------
+
+QUESTION 6:
+
+for (let i = 1; i <= 5; i++) {
+
+    if (i === 3) {
+        continue
+    }
+
+    console.log(i)
+}
+
+
+Question:
+
+What is the output?
+
+
+--------------------------------------------
+
+QUESTION 7:
+
+for (let i = 1; i <= 5; i++) {
+
+    if (i === 3) {
+        break
+    }
+
+    console.log(i)
+}
+
+
+Question:
+
+What is the output?
+
+
+--------------------------------------------
+
+QUESTION 8:
+
+for (let i = 1; i <= 3; i++) {
+
+    for (let j = 1; j <= 2; j++) {
+
+        console.log(i, j)
+
+    }
+}
+
+
+Question:
+
+How many times will console.log execute?
+
+
+==================================================
+18. ONE GOLDEN RULE FOR BEGINNERS
+==================================================
+
+Tell students:
+
+"NEVER GUESS THE OUTPUT OF A LOOP.
+
+TRACK THE VALUE."
+
+For example:
+
+i = 1
+condition -> TRUE
+print
+update
+
+i = 2
+condition -> TRUE
+print
+update
+
+i = 3
+condition -> FALSE
+STOP
+
+
+If you practice this method,
+loops become very easy.
+
+
+FINAL MEMORY TRICK:
+
+FOR LOOP
+=
+START -> CHECK -> RUN -> UPDATE -> CHECK -> RUN -> UPDATE...
+
+
+WHILE LOOP
+=
+CHECK -> RUN -> UPDATE -> CHECK -> RUN...
+
+
+DO WHILE
+=
+RUN -> UPDATE -> CHECK -> RUN -> UPDATE...
+
+
+BREAK
+=
+STOP
+
+
+CONTINUE
+=
+SKIP
+
+
+FOR...OF
+=
+VALUE
+
+
+FOR...IN
+=
+KEY
+
+
+NESTED LOOP
+=
+OUTER ONE TIME -> INNER COMPLETE
